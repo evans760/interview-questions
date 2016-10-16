@@ -95,13 +95,20 @@ Go through all of the following questions and think about how you would respond 
 ** Browsers read selectors from right to left. First looking for all elements matching the key selector(the right most). then it checks if it matches or is under the next (left most) element.
 
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
-** the box model is the box that wraps around every html element. It consists of margins, borders padding and the actual content. 
+** the box model is the box that wraps around every html element. It consists of margins, borders padding and the actual content.
+
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 ** if you set a width, and add padding and boarders, the total width won't change. The inner width will adapt. The Advantages are you can play with the padding and boarder values without worring about expanding you box. very convient for column layouts. You can mix percentages with pixel values, so you don't have to worry about a child element for the padding.
+
 * List as many values for the display property that you can remember.
+
 * What's the difference between inline and inline-block?
 ** elements with display inline-block are like display inline elements but they can have a width and height. That means you can use an inline-block elements as a block while flowing it within textor other elements.
+
 * What's the difference between a relative, fixed, absolute and statically positioned element?
+** A Static position element is the default type of positioning. The elements will stack as they appear in order in the line of code.
+  A relative positioned element will need a top:10px, bottom:20px, left:0px, and right:7px and the element will move to where the quardanents tell it to be. A relative positioned element will stack on top of other elements that are stactic or before it in the code line.
+   
 * The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
 * What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 * Have you played around with the new CSS Flexbox or Grid specs?
